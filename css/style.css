@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #223849;
+}
+
+body{
+    display: grid;
+grid-template-areas:"header header header"
+                    "main main main"
+                    "footer footer footer";
+}
+header{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+main{
+    grid-area: main;
+    display: flex;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.navegation{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.href{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+.title{
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+.text_stt{
+    font-size: 0.6em;
+    color: #FBBD22;
+}
+
+.logo {
+    max-width:75px;
+    max-height:150px;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    user-select: none;
+}
+.href a{
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.href a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background: #FBBD22;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+
+.href a:hover:after{
+    transform: scale(1);
+    transform-origin: right;
+}
+
+.href .btn_login{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #FBBD22;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: 0.5s ;
+
+}
+
+.href .btn_login{
+    color: #ffffff;
+}
+.href .btn_login:hover{
+    background: #FBBD22;  
+    color: #151414
+}
+
+
+.main_stt{
+    gap: 10px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    text-decoration: none;
+}
+
+.main_stt h2{
+    font-size: 2.9em;
+    color: #ffffff;
+}
+.main_stt h3{
+    color:#FBBD22;
+}
+
+.main_stt img{
+    width: 400px;
+    height: 400px;
+}
+.main_stt p{
+    color: #ffffff;
+}
+
+.main_stt input{
+    width: 330px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #FBBD22;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 50px;
+    transition: 0.5s ;
+    margin-top: 200px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.main_stt input:hover{
+    background: #FBBD22;  
+    color: black;
+}
+
+.text_stt_cont{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+}
+
+.img_tele{
+    margin-top: 100px;
+    width: 400px;
+    height: 350px;
+    border-radius: 20%;
+}
