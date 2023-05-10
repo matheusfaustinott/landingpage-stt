@@ -9,18 +9,22 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    header, main, footer{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 body{
     display: grid;
 grid-template-areas:"header header header"
                     "main main main"
                     "footer footer footer";
                     background-color: #223849;
-                    transition: background 0.2s linear;
 }
 
-body.dark{
-    background: #292c35;
-}
 
 header{
     grid-area: header;
@@ -34,6 +38,8 @@ header{
 main{
     grid-area: main;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer{
